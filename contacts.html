@@ -1,0 +1,295 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"> </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="http://127.0.0.1:5500/index.html#"
+              >Users
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5500/contacts.html"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="col-md-10 m-auto">
+      <br /><br />
+
+      <section class="col-md-5 m-auto">
+        <h1>contact</h1>
+
+        <div class="form-group">
+          <label for="">vinCode</label>
+          <input
+            type="text"
+            id="vinCode"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">price</label>
+          <input
+            type="number"
+            id="price"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">amountPaid</label>
+          <input
+            type="number"
+            id="amountPaid"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">amountToBePaid</label>
+          <input
+            type="number"
+            id="amountToBePaid"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">purchase</label>
+          <input
+            type="date"
+            id="purchase"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">container</label>
+          <input
+            type="text"
+            id="container"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">carManufacture</label>
+          <input
+            type="text"
+            id="carManufacture"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">carModel</label>
+          <input
+            type="text"
+            id="carModel"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">year</label>
+          <input
+            type="date"
+            id="year"
+            placeholder="Enter here"
+            class="form-control register-control"
+          />
+        </div>
+        <div class="form-group">
+          <button id="contactReg" class="btn btn-dark col-md-12 d-block">
+            Register
+          </button>
+        </div>
+      </section>
+
+      <article
+        class="d-flex flex-wrap justify-content-between contract-cards-area"
+      ></article>
+    </section>
+
+    <button
+      id="modalOpen"
+      type="button"
+      class="btn btn-primary d-none"
+      data-toggle="modal"
+      data-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <br />
+
+            <input type="number" id="contractId" class="d-flex" />
+
+            <div class="form-group">
+              <label for="">Enter vinCode</label>
+              <input
+                type="text"
+                class="form-control update-contract-info"
+                id="updateVinCode"
+                placeholder="Enter here"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="">Enter price</label>
+              <input
+                type="number"
+                class="form-control update-contract-info"
+                id="updatePrice"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Enter amountPayId</label>
+              <input
+                type="number"
+                class="form-control update-contract-info"
+                id="updatePayId"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Enter amountToBePaid</label>
+              <input
+                type="number"
+                class="form-control update-contract-info"
+                id="updateAmountToBePaid"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Enter purchase</label>
+              <input
+                type="date"
+                class="form-control update-contract-info"
+                id="updatePurchase"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for=""> Enter container</label>
+              <input
+                type="text"
+                class="form-control update-contract-info"
+                id="updateContainer"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Enter carManufacture</label>
+              <input
+                type="text"
+                class="form-control update-contract-info"
+                id="updateCarManufacture"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Enter carModel</label>
+              <input
+                type="text"
+                class="form-control update-contract-info"
+                id="updateCarModel"
+                placeholder="Enter here"
+              />
+            </div>
+            <div class="form-group">
+              <label for="">Enter yearl</label>
+              <input
+                type="date"
+                class="form-control update-contract-info"
+                id="updateYear"
+                placeholder="Enter here"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              onclick="updateContactInfo()"
+              type="button"
+              class="btn btn-warning"
+              data-dismiss="modal"
+            >
+              Update
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./contact.js"></script>
+  </body>
+</html>

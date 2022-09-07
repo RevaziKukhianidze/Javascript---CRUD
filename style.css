@@ -1,0 +1,13 @@
+body {
+    margin:0px;
+    padding: 0px;
+}
+
+.form-group {
+    margin:20px 0px;
+}
+
+.error-border {
+    border:2px solid red;
+}
+
